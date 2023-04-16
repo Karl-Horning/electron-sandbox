@@ -1,2 +1,2 @@
 # electron-sandbox
- A place to try the Electron documentation.
+A place to try the Electron documentation.

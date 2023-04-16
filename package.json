@@ -1,0 +1,15 @@
+{
+  "name": "electron-sandbox",
+  "version": "1.0.0",
+  "description": "A place to try the Electron documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "node"
+  ],
+  "author": "Karl Horning",
+  "license": "ISC"
+}
