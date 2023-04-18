@@ -9,7 +9,13 @@ const createWindow = () => {
             preload: path.join(__dirname, "preload.js"),
         },
     });
-    ipcMain.handle("ping", () => "pong");
+
+    ipcMain.on("set-title", (event, title) => {
+        const webContents = event.sender;
+        const win = BrowserWindow.fromWebContents(webContents);
+        win.setTitle(title);
+    });
+
     win.loadFile("index.html");
 };
 
