@@ -4,12 +4,6 @@ information.innerText = `This app is using Chrome (v${versions.chrome()}), Node.
 const setButton = document.getElementById("btn");
 const titleInput = document.getElementById("title");
 
-const func = async () => {
-    const response = await window.versions.ping();
-};
-
-func();
-
 setButton.addEventListener("click", () => {
     const title = titleInput.value;
     window.electronAPI.setTitle(title);
